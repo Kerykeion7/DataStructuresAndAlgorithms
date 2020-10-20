@@ -6,7 +6,7 @@ There are however a few guidelines I want you to follow before contributing and 
 
 - Fork this repository.
 - Clone the repository to your favorite IDE.
-- Create a new branch of which the name contains your Github user name and the specific issue you are tackling. For example: Kerykeion_#22_branch.
+- Create a new branch of which the name contains your Github user name and the specific issue you are tackling. For example: **Kerykeion_#22_branch**.
 - Submit meaningful commits.
 - Carefully read the Issue requirements and follow them thoroughly before submitting a PR, else the PR will not be valid.
 - Do not just bluntly copy and paste code, else the PR will not be valid.
