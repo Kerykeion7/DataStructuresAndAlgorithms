@@ -10,9 +10,4 @@ Try not to cheat and copy paste code, but try to do it on your self together wit
 Good luck and have fun.
 
 # Get Started
-- Fork this repository
-- Clone the forked repository to your favorite IDE
-- Create a new branch to save your work upon
-- Push the branch to the forked repository if your implementation works
-- Create a pull request
-- Wait for my response :-)
+Read https://github.com/Kerykeion7/DataStructuresAndAlgorithms/blob/master/CONTRIBUTING.md
