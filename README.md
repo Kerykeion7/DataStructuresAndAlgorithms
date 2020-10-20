@@ -5,7 +5,7 @@ The repository is just starting so there are more Data-Structures and Algorithm 
 
 Also I let this repository count for the hacktoberfest to give others a chance to learn something about Data-structures and algorithms and at the same get their required PR's
 
-Try not to cheat and copy paste code, but try to do it on your self together with the needed research ofcourse.
+Try not to cheat and copy paste code, but try to do it on your own together with the needed research ofcourse.
 
 Good luck and have fun.
 
