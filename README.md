@@ -9,5 +9,5 @@ Try not to cheat and copy paste code, but try to do it on your own together with
 
 Good luck and have fun.
 
-# Get Started
+# Contributing
 Read [this](CONTRIBUTING.md).
