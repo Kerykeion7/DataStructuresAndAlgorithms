@@ -12,3 +12,7 @@ There are however a few guidelines I want you to follow before contributing and 
 - Keep your C# code clean.
 - Keep the directory folders clean.
 
+# Questions
+
+If there are any questions or if there is something you do not understand about an issue just leave a comment at the issue in question and I will answer ASAP.
+
