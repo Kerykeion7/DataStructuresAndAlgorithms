@@ -10,4 +10,4 @@ Try not to cheat and copy paste code, but try to do it on your self together wit
 Good luck and have fun.
 
 # Get Started
-Read [a relative link](CONTRIBUTING.md)
+Read [this](CONTRIBUTING.md).
