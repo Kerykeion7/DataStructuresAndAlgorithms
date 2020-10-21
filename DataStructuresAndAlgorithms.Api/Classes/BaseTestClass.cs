@@ -1,4 +1,4 @@
-﻿namespace DataStructuresAndAlgorithms.Test.Classes
+﻿namespace DataStructuresAndAlgorithms.Api.Classes
 {
     public abstract class BaseTestClass
     {

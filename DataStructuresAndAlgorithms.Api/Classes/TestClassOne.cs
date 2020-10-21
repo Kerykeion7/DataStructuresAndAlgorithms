@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DataStructuresAndAlgorithms.Test.Classes
+namespace DataStructuresAndAlgorithms.Api.Classes
 {
     public class TestClassOne : BaseTestClass
     {
