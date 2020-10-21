@@ -13,6 +13,6 @@ Good luck and have fun.
 
 If there is anything in my code you think can be done in a better way, feel free to let me now or open an issue yourself, I'll certainly take a look at it.
 
-Also you can always improve upon the code you find in this repository if you like by contributing according to the contributing [guidelines](CONTRIBUTING.md).
+Also you can always improve upon the code you find in this repository if you like, by contributing according to the [guidelines](CONTRIBUTING.md).
 
 Thank you in advance.
