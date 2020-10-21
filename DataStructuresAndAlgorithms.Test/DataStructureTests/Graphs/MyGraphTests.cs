@@ -1,8 +1,6 @@
 ﻿using DataStructures.Lib.Graphs;
 using DataStructuresAndAlgorithms.Api.Classes;
-using System;
 using System.Collections.Generic;
-using System.Text;
 using Xunit;
 
 namespace DataStructuresAndAlgorithms.Test.DataStructureTests.Graphs
@@ -10,11 +8,45 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests.Graphs
     public class MyGraphTests
     {
         [Fact]
-        public void Testing()
+        public void GraphNodesCount_Equals_9()
         {
-            MyGraph<GraphNodeTestClass> myGraph = new MyGraph<GraphNodeTestClass>(ArrangeMyGraph().ToArray());
+            MyGraph<GraphNodeTestClass> myGraph = new MyGraph<GraphNodeTestClass>(ArrangeMyGraph());
 
-            myGraph.Add(new GraphNodeTestClass { Id = 9 });
+            myGraph.Add(new GraphNodeTestClass { Id = 5 });
+
+            Assert.True(myGraph.Count is 5);
+        }
+
+        [Fact]
+        public void MyGraphFirstNode_HasThreeConnections()
+        {
+            Assert.True(ArrangeAndConnectMyGraphNodes()[0].Connections.Length.Equals(3));
+        }
+
+        [Fact]
+        public void MyGraphThirdNodedConnections_Contains_MyGraphFirstNode()
+        {
+            MyGraph<GraphNodeTestClass> myGraph = ArrangeAndConnectMyGraphNodes();
+
+            Assert.Contains(myGraph[0], myGraph[2].Connections);
+        }
+
+        private dynamic ConnectGraphNodes(MyGraph<GraphNodeTestClass> myGraph)
+        {
+            myGraph.Connect(myGraph[0], myGraph[1]);
+            myGraph.Connect(myGraph[0], myGraph[3]);
+            myGraph.Connect(myGraph[1], myGraph[0]);
+            myGraph.Connect(myGraph[1], myGraph[2]);
+            myGraph.Connect(myGraph[2], myGraph[0]);
+            myGraph.Connect(myGraph[2], myGraph[3]);
+            myGraph.Connect(myGraph[3], myGraph[1]);
+
+            return myGraph;
+        }
+
+        private MyGraph<GraphNodeTestClass> ArrangeAndConnectMyGraphNodes()
+        {
+            return ConnectGraphNodes(new MyGraph<GraphNodeTestClass>(ArrangeMyGraph()));
         }
 
         private List<GraphNodeTestClass> ArrangeMyGraph()
@@ -24,11 +56,7 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests.Graphs
                 new GraphNodeTestClass {Id = 1},
                 new GraphNodeTestClass {Id = 2},
                 new GraphNodeTestClass {Id = 3},
-                new GraphNodeTestClass {Id = 4},
-                new GraphNodeTestClass {Id = 5},
-                new GraphNodeTestClass {Id = 6},
-                new GraphNodeTestClass {Id = 7},
-                new GraphNodeTestClass {Id = 8}
+                new GraphNodeTestClass {Id = 4}
             };
         }
     }
