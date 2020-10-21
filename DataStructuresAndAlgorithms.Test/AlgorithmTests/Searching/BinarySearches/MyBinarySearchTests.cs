@@ -1,6 +1,6 @@
 ﻿using Algorithms.Lib.Searching.BinarySearches;
+using DataStructuresAndAlgorithms.Api.Classes;
 using DataStructuresAndAlgorithms.Api.Services;
-using DataStructuresAndAlgorithms.Test.Classes;
 using System;
 using System.Linq;
 using Xunit;
