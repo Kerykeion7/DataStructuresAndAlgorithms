@@ -1,11 +1,12 @@
 ﻿using DataStructures.Lib.Classes;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace DataStructures.Lib.Graphs
 {
-    public class MyGraph<TNode> : IEnumerable
+    public class MyGraph<TNode> : IEnumerable<TNode>
         where TNode : MyGraphNode<TNode>
     {
         public int Count => _nodes.Length;
@@ -83,6 +84,11 @@ namespace DataStructures.Lib.Graphs
         }
 
         public IEnumerator GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        IEnumerator<TNode> IEnumerable<TNode>.GetEnumerator()
         {
             return _nodes.AsEnumerable().GetEnumerator();
         }
