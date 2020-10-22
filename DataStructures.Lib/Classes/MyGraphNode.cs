@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
-
-namespace DataStructures.Lib.Classes
+﻿namespace DataStructures.Lib.Classes
 {
     public class MyGraphNode<T>
     {
