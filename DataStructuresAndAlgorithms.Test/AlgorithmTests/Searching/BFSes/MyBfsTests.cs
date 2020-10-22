@@ -2,6 +2,6 @@
 {
     class MyBfsTests
     {
-        // See MyGraphTests.cs
+        // See DataStructureTests/Graphs/MyGraphTests.cs
     }
 }
