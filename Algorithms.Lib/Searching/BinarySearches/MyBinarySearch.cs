@@ -30,12 +30,9 @@ namespace Algorithms.Lib.Searching.BinarySearches
                     return Find(right, searchKey);
                 }
 
-                if (centerValue.CompareTo(searchKey) > 0)
-                {
                     T[] left = new T[center];
                     Array.Copy(array, 0, left, 0, center);
                     return Find(left, searchKey);
-                }
             }
 
             return default;
