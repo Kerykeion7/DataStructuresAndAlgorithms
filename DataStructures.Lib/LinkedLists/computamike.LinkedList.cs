@@ -48,7 +48,6 @@ namespace DataStructures.Lib.LinkedLists
         }
 
 
-
         public DoublyLinkedListNode this[int key]
         {
             get
@@ -60,6 +59,15 @@ namespace DataStructures.Lib.LinkedLists
                 }
                 return ReturnedElement;
             }
+        }
+
+
+        public void RemoveAt(int v)
+        {
+            var p = this[v].Prev;
+            var n = this[v].Next;
+            p.Next = n;
+            n.Prev = p;
         }
     }
 

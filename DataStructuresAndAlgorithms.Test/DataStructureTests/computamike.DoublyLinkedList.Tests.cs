@@ -155,26 +155,10 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
             SUT.Add(newNode3);
 
             // Act
-
-            var Node2 = SUT[1].Data;
-            var newNode2b = new DoublyLinkedListNode() { Data = "777" };
-            SUT.Remove(1, newNode2b);
+            SUT.RemoveAt(1);
             //Assert
             Assert.Equal("123", SUT[0].Data);
-            Assert.Equal("456", SUT[1].Data);
-            Assert.Equal("777", SUT[2].Data);
-            Assert.Equal("789", SUT[3].Data);
-
-            // Assert that navigation works on the newly added Node.
-            Assert.Equal("456", SUT[2].Prev.Data);
-            Assert.Equal("789", SUT[2].Next.Data);
-
-
-
-
-
-
-
+            Assert.Equal("789", SUT[1].Data);
         }
 
 
