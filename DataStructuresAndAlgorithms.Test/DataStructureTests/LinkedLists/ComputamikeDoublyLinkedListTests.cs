@@ -118,7 +118,6 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
 
             // Act
 
-            var Node2 = SUT[1].Data;
             var newNode2b = new DoublyLinkedListNode() { Data = "777" };
             SUT.Add(1, newNode2b);
             //Assert
