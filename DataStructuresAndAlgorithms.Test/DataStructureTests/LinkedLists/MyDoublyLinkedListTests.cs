@@ -18,7 +18,7 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests.LinkedLists
         public void MyLinkedList_Equals_OriginalLinkedList()
         {
             LinkedList<int> originalLinkedList = _linkedListService.CreateLinkedList(new LinkedList<int>()) as LinkedList<int>;
-            MyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyLinkedList<int>()) as MyLinkedList<int>;
+            MyDoublyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyDoublyLinkedList<int>()) as MyDoublyLinkedList<int>;
 
             ArrangeAndActUponLinkedLists(originalLinkedList, myLinkedList);
 
@@ -29,7 +29,7 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests.LinkedLists
         public void MyLinkedList_NotEquals_OriginalLinkedList()
         {
             LinkedList<int> originalLinkedList = _linkedListService.CreateLinkedList(new LinkedList<int>()) as LinkedList<int>;
-            MyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyLinkedList<int>()) as MyLinkedList<int>;
+            MyDoublyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyDoublyLinkedList<int>()) as MyDoublyLinkedList<int>;
 
             ArrangeAndActUponLinkedLists(originalLinkedList, myLinkedList);
             myLinkedList.AddFirst(1);
@@ -40,12 +40,12 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests.LinkedLists
         [Fact]
         public void MyLinkedList_Contains_ValueNine()
         {
-            MyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyLinkedList<int>()) as MyLinkedList<int>;
+            MyDoublyLinkedList<int> myLinkedList = _linkedListService.CreateLinkedList(new MyDoublyLinkedList<int>()) as MyDoublyLinkedList<int>;
 
             Assert.True(myLinkedList.Contains(9));
         }
 
-        private void ArrangeAndActUponLinkedLists(LinkedList<int> originalLinkedList, MyLinkedList<int> myLinkedList)
+        private void ArrangeAndActUponLinkedLists(LinkedList<int> originalLinkedList, MyDoublyLinkedList<int> myLinkedList)
         {
             LinkedListNode<int> fiveHundredListNode = new LinkedListNode<int>(500);
             LinkedListNode<int> tenListNode = new LinkedListNode<int>(10);
