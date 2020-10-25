@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace DataStructures.Lib.LinkedLists
 {
-    public class MyLinkedList<T> : IEnumerable<T>
+    public class MyDoublyLinkedList<T> : IEnumerable<T>
     {
         public int Count { get; set; }
         public MyLinkedListNode<T> Head { get; set; }
