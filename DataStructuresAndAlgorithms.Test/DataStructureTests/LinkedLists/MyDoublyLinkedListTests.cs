@@ -6,10 +6,10 @@ using Xunit;
 
 namespace DataStructuresAndAlgorithms.Test.DataStructureTests.LinkedLists
 {
-    public class MyLinkedListTests
+    public class MyDoublyLinkedListTests
     {
         private readonly LinkedListService _linkedListService;
-        public MyLinkedListTests()
+        public MyDoublyLinkedListTests()
         {
             _linkedListService = new LinkedListService();
         }
