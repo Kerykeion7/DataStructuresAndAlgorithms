@@ -8,7 +8,7 @@ using Xunit;
 
 namespace DataStructuresAndAlgorithms.Test.DataStructureTests
 {
-    public class computamike_doubly_linked_list_test
+    public class ComputatmikeDoublyLinkedListTests
     {
         [Fact]
         public void testThatANodeHasThreeProperties()
