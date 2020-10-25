@@ -11,9 +11,8 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
     public class ComputatmikeDoublyLinkedListTests
     {
         [Fact]
-        public void testThatANodeHasThreeProperties()
+        public void TestThatANodeHasThreeProperties()
         {
-            var SUT = new DoublyLinkedListNode();
             var dataProperty= typeof(DoublyLinkedListNode).GetProperty("Data");
             var nextProperty = typeof(DoublyLinkedListNode).GetProperty("Next");
             var prevProperty = typeof(DoublyLinkedListNode).GetProperty("Prev");
@@ -28,9 +27,8 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         }
 
         [Fact]
-        public void testThatAListHasStartAndEndNodes()
+        public void TestThatAListHasStartAndEndNodes()
         {
-            var SUT = new DoublyLinkedListDataStructure();
             var firstNodeProperty = typeof(DoublyLinkedListDataStructure).GetProperty("FirstNode");
             var lastNodeProperty = typeof(DoublyLinkedListDataStructure).GetProperty("LastNode");
  
@@ -44,10 +42,10 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         }
 
         [Fact]
-        public void testAddingAFirstNode() {
+        public void TestAddingAFirstNode() {
 
             // Arrange
-            var SUT = new DoublyLinkedListDataStructure();
+            var SUT = new ComputamikeDoublyLinkedList();
             var newNode = new DoublyLinkedListNode() { Data = "123"};
             // Act
 
@@ -59,11 +57,11 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         }
 
         [Fact]
-        public void testAdding2Nodes()
+        public void TestAdding2Nodes()
         {
 
             // Arrange
-            var SUT = new DoublyLinkedListDataStructure();
+            var SUT = new ComputamikeDoublyLinkedList();
             var newNode = new DoublyLinkedListNode() { Data = "123" };
             var newNode2 = new DoublyLinkedListNode() { Data = "456" };
 
@@ -79,10 +77,10 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
 
 
         [Fact]
-        public void testGettingNthNode()
+        public void TestGettingNthNode()
         {
             // Arrange
-            var SUT = new DoublyLinkedListDataStructure();
+            var SUT = new ComputamikeDoublyLinkedList();
             var newNode = new DoublyLinkedListNode() { Data = "123" };
             var newNode2 = new DoublyLinkedListNode() { Data = "456" };
             var newNode3 = new DoublyLinkedListNode() { Data = "789" };
@@ -106,10 +104,10 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         }
 
         [Fact]
-        public void testInsertingANodeAtNthNode()
+        public void TestInsertingANodeAtNthNode()
         {
             // Arrange
-            var SUT = new DoublyLinkedListDataStructure();
+            var SUT = new ComputamikeDoublyLinkedList();
             var newNode = new DoublyLinkedListNode() { Data = "123" };
             var newNode2 = new DoublyLinkedListNode() { Data = "456" };
             var newNode3 = new DoublyLinkedListNode() { Data = "789" };
@@ -142,10 +140,10 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         }
 
         [Fact]
-        public void testRemovingANodeAtNthNode()
+        public void TestRemovingANodeAtNthNode()
         {
             // Arrange
-            var SUT = new DoublyLinkedListDataStructure();
+            var SUT = new ComputamikeDoublyLinkedList();
             var newNode = new DoublyLinkedListNode() { Data = "123" };
             var newNode2 = new DoublyLinkedListNode() { Data = "456" };
             var newNode3 = new DoublyLinkedListNode() { Data = "789" };
