@@ -8,7 +8,7 @@ using Xunit;
 
 namespace DataStructuresAndAlgorithms.Test.DataStructureTests
 {
-    public class ComputatmikeDoublyLinkedListTests
+    public class ComputamikeDoublyLinkedListTests
     {
         [Fact]
         public void TestThatANodeHasThreeProperties()
@@ -29,8 +29,8 @@ namespace DataStructuresAndAlgorithms.Test.DataStructureTests
         [Fact]
         public void TestThatAListHasStartAndEndNodes()
         {
-            var firstNodeProperty = typeof(DoublyLinkedListDataStructure).GetProperty("FirstNode");
-            var lastNodeProperty = typeof(DoublyLinkedListDataStructure).GetProperty("LastNode");
+            var firstNodeProperty = typeof(ComputamikeDoublyLinkedList).GetProperty("FirstNode");
+            var lastNodeProperty = typeof(ComputamikeDoublyLinkedList).GetProperty("LastNode");
  
 
             Assert.NotNull(firstNodeProperty);
