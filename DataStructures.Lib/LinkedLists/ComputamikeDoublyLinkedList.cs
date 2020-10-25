@@ -11,7 +11,7 @@ namespace DataStructures.Lib.LinkedLists
     /// but... Thank goodness for Wikipedia
     /// https://en.wikipedia.org/wiki/Doubly_linked_list#:~:text=In%20computer%20science%2C%20a%20doubly,sequentially%20linked%20records%20called%20nodes.&text=The%20beginning%20and%20ending%20nodes,facilitate%20traversal%20of%20the%20list.
     /// </summary>
-    public class DoublyLinkedListDataStructure
+    public class ComputamikeDoublyLinkedList
     {
         public DoublyLinkedListNode FirstNode { get; set; }
         public DoublyLinkedListNode LastNode { get; set; }
