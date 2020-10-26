@@ -11,8 +11,6 @@ Good luck and have fun.
 
 # Contributing
 
-If there is anything in my code you think can be done in a better way, feel free to let me now or open an issue yourself, I'll certainly take a look at it.
+If there is anything in the code you think can be done in a better way, feel free to first open an issue for it and then create a PR.
 
-Also you can always improve upon the code you find in this repository if you like, by contributing according to the [guidelines](CONTRIBUTING.md).
-
-Thank you in advance.
+Read [this](CONTRIBUTING.md).
